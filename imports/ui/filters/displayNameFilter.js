@@ -15,6 +15,10 @@ function DisplayNameFilter(user) {
     return user.emails[0].address;
   }
 
+  if (user.phone) {
+    return user.phone.number;
+  }
+
   return user;
 }
 
